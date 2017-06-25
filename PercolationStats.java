@@ -14,12 +14,18 @@ public class PercolationStats {
 		double[] success = new double[trials];
 		for (int i = 0; i < trials; i++) {
 			Percolation grid = new Percolation(n);
+			int row;
+			int col;
+			int count = 0;
 			while (!grid.percolates()) {
-				int row = StdRandom.uniform(1, n + 1);
-				int col = StdRandom.uniform(1, n + 1);
+				do {
+					row = StdRandom.uniform(1, n + 1);
+					col = StdRandom.uniform(1, n + 1);					
+				} while(grid.isOpen(row, col));
 				grid.open(row, col);
+				count++;
 			}
-			success[i] = grid.numberOfOpenSites() / (double)(n * n);
+			success[i] = (double)count / (double)(n * n);
 		}
 		mean_success = StdStats.mean(success);
 		stddev_success = StdStats.stddev(success);
