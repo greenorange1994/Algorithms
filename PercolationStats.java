@@ -7,7 +7,7 @@ public class PercolationStats {
 	private double confidenceLo;
 	private double confidenceHigh;
 
-	public PercolationStats(int n, int trials) {	// perform trials independent experiments on an n-by-n grid
+	public PercolationStats(int n, int trials) {	 // perform trials independent experiments on an n-by-n grid
 		if (trials <= 0 || n <= 0) {
 			throw new IllegalArgumentException("index should be larger than zero");
 		}
