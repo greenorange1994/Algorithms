@@ -7,7 +7,7 @@ public class Percolation {
 	private WeightedQuickUnionUF site;
 	private WeightedQuickUnionUF auxsite;
    
-	public Percolation(int n) {					// create n-by-n grid, with all sites blocked
+	public Percolation(int n) {					 // create n-by-n grid, with all sites blocked
 		if (n <= 0) {
 			throw new IllegalArgumentException("index" + n + "should be larger than zero");
 		}
