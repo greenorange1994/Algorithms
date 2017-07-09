@@ -9,3 +9,7 @@ MCMC simulation to find the threshold P. Everytime we simulate a pair of numbers
 Must have first node and last node to implement add/remove items at first or at last.
 ### RandomizedQueue Class
 Used resized array to implement this class. The initialization of an array is implemented element by element and you cannot use itr_a = a to assign all a values to itr_a.
+## Week3 - Collinear Points
+### Point Class
+### BruteForceSearch
+### FastSearch
