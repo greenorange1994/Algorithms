@@ -11,5 +11,6 @@ Must have first node and last node to implement add/remove items at first or at 
 Used resized array to implement this class. The initialization of an array is implemented element by element and you cannot use itr_a = a to assign all a values to itr_a.
 ## Week3 - Collinear Points
 ### Point Class
+The biggest problem I have met is how to create a new comparator because I'm not very used to implementing interfaces. To create a comparator for `Array.sort`, you should first create a new private class called `slopeOrder` and define a method called `compare` in it. Here I simplify the standard way of writing codes.
 ### BruteForceSearch
 ### FastSearch
