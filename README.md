@@ -13,4 +13,5 @@ Used resized array to implement this class. The initialization of an array is im
 ### Point Class
 The biggest problem I have met is how to create a new comparator because I'm not very used to implementing interfaces. To create a comparator for `Array.sort`, you should first create a new private class called `slopeOrder` and define a method called `compare` in it. Here I simplify the standard way of writing codes.
 ### BruteForceSearch
+It is a straightforward way of finishing this task. 
 ### FastSearch
